@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">    
+  
+  <title>Form HTML, PHP y SMTP Google</title>
+  <link rel="stylesheet" href="mai/style.css">
+</head>
+<body>
+  <div id="con">
+  <h1>Contacto</h1>
+  <form action="php/mail.php" method="POST" enctype="multipart/form-data">
+    <input type="text" name="nombre" placeholder="Nombre y Apellidos" required> 
+    <input type="email" name="email" placeholder="Email" required><br>
+    <textarea name="mensaje" rows="4" placeholder="Mensaje" required></textarea><br>
+    <!---<input type="file" name="adjunto"><br>--->
+    <button type="submit">Enviar</button>
+  </form>
+
+</div>
+<!--https://xoce.org-->
+</body>
+</html>
